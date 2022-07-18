@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --primary-color-hue: 252;
+  --dark-color-lightness: 17%;
+  --light-color-lightness: 95%;
+  --white-color-lightness: 100%;
+
+  --color-white: hsl(252, 30%, var(--white-color-lightness));
+  /* --color-light: hsl(252, 30%, var(--light-color-lightness)); */
+  --color-light: hsl(216, 20%, 95%);
+  --color-gray: hsl(214, 8%, 41%);
+  /* --color-gray: hsl(214, 8%, 41%) */
+  /* --color-primary: hsl(var(--primary-color-hue), 75%, 60%); */
+  --color-primary: hsl(213, 100%, 20%);
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-online: hsla(219, 54%, 15%, 0.635);
+  --color-danger: hsl(0, 84%, 58%);
+  --color-dark: hsl(252, 30%, var(--dark-color-lightness));
+  --color-black: hsl(252, 30%, 10%);
+
+}
+*,
+*::before,
+*::after  
+
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: var(--color-dark);
+    background: var(--color-light);
+    overflow-x: hidden;
+    font-size: 1rem;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+  }
+
+.container {
+	background-color: #fff;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+	width: 50%;
+    border-radius: 2%;
+}
+
+form {
+	max-width: 60%;
+	margin: 10px auto;
+	padding: 0.5rem 1rem;
+}
+
+form h1 {
+	padding: 5px 0;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-align: center;
+	color: #111;
+}
+
+.field {
+	margin-bottom: 1.5rem;
+}
+
+.field small {
+	color: var(--color-danger);
+}
+
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+
+input,
+textarea,
+select {
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 0.5rem 0.75rem;
+	width: 100%;
+	font-size: 1rem;
+ }
+
+input::placeholder {
+	color: var(--color-gray);
+}
+
+/* button */
+button {
+	background: var(--color-primary);
+	color: var(--color-white);
+	border-radius: 0.25rem;
+	font-size: 1rem;
+	font-weight: 400;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	text-align: center;
+	padding: 1rem 1rem;
+}
+
+button:hover {
+	background: var(--color-online);
+	border-color:var(--color-online);
+	cursor: pointer;
+}
+
+.fare, .gender{
+    margin-right: 1rem;
+}
+
+.radios  {
+    margin: 1rem, 0.5rem; 
+	cursor: pointer;
+	display: flex;
+	border-radius: 5px;
+    margin-bottom: 1.5rem;
+} 
+
+
+input[type="radio"] {
+	align-items: flex-start;
+    width: 3rem;
+    margin-right: 0.5rem;
+    margin-top: -0.4rem;
+    vertical-align: middle;
+}
+
+.full {
+	width: 100%;
+} 
+
+.error {
+	/* color: var(--color-danger); */
+} 
+
+
+

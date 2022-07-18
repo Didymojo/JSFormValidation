@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Booking form JavaScript validation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <form action="signup.html" method="post" id="signup">
+                <h1>Travel Booking Form</h1>
+
+                <div class="field">
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name" />
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name" />
+                    <small></small>
+                </div>                      
+
+                <div class="radios">
+                    <p class="fare">Fare:</p>
+                    <input type="radio" id="radio" name="oneway" value="oneway">
+                    <label for="oneway">One Way</label><br>
+                    <input type="radio" id="radio" name="return" value="return">
+                    <label for="return">Return</label><br>
+                </div>
+
+                <div class="radios">
+                    <p class="gender">Gender:</p>
+                    <input type="radio" id="radio" name="fgender" value="fgender">
+                    <label for="fgender">Female</label><br>
+                    <input type="radio" id="radio" name="male" value="male">
+                    <label for="male">Male</label><br>
+                </div>
+
+                <div class="field">
+                    <label for="departure">Departure:</label>                     
+                        <select name="departure" id="departure" required>
+                            <option value=" ">Select your departure city</option>
+                            <option value="MEL">Melbourne</option>
+                            <option value="SYD">Sydney</option>
+                            <option value="BRIS">Brisbane</option>
+                            <option value="PRT">Perth</option>
+                            <option value="HBT">Hobart</option>
+                        </select>
+                    <small></small>
+                </div>
+                
+                <div class="field">
+                    <label for="destination">Destination:</label>
+                        <select name="destination" id="destination" required>
+                            <option value=" ">Select your destination city</option>
+                            <option value="MEL">Melbourne</option>
+                            <option value="SYD">Sydney</option>
+                            <option value="BRIS">Brisbane</option>
+                            <option value="PRT">Perth</option>
+                            <option value="HBT">Hobart</option>
+                        </select>
+                    <small></small>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" />
+                    <small></small>
+                </div>
+                <div class="field">
+                    <button type="submit" class="full">Submit</button>
+                </div>
+            </form>
+        </div>
+        <script src="index.js"></script>
+     </body>
+   </html>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
